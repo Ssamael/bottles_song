@@ -3,7 +3,7 @@ require_relative '../lib/bottles'
 
 RSpec.describe Bottles do
     subject {Bottles.new}
-  describe 'Return proper message i case of' do
+  describe 'Return proper message in case of' do
 
     it '99 bottles' do 
       expect(subject.verse(99)).to eq '99 bottles of beer on the wall, 99 bottles of beer./nTake one down and pass it around, 98 bottles of beer on the wall.'
