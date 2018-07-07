@@ -16,5 +16,9 @@ RSpec.describe Bottles do
     it '2 bottles' do
         expect(subject.verse(2)).to eq '2 bottles of beer on the wall, 2 bottles of beer./nTake one down and pass it around, 1 bottle of beer on the wall.'
     end
+
+    it '1 bottle' do
+        expect(subject.verse(1)).to eq '1 bottle of beer on the wall, 1 bottle of beer./nTake it down and pass it around, no more bottles of beer on the wall.'
+    end
   end
 end
